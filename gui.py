@@ -1,23 +1,22 @@
 import customtkinter as ctk
-import diec
 from CTkMenuBar import CTkMenuBar
 from CTkMessagebox import CTkMessagebox
 from plyer import notification
 import os
 import subprocess
 import sys
+import diec
 from tkinter import messagebox, filedialog
 from tkinter import ttk
 
 # GUI setup
 app = ctk.CTk()
-app.geometry("1000x600")
+app.geometry("1000x900")
 app.title("diec-test-gui")
-app.resizable(False, False)
 
 # Info message
 def info_messagebox():
-    CTkMessagebox(title="diec-test-gui", message="Package: diec\nPyPi Version: 3.2\nRelease Date: 26.12.2024\nMade by: Eldritchyl")
+    CTkMessagebox(title="diec-test-gui", message="Package: diec\nPyPi Version: 3.2\nRelease Date: 26.12.2024\nMade by: Velis")
 
 # Restart the application
 def restart_gui():
@@ -165,5 +164,5 @@ progress_bar = ttk.Progressbar(app, orient="horizontal", length=300, mode="indet
 progress_bar.pack(pady=20)
 
 # Run the application
-app.protocol("WM_DELETE_WINDOW", on_close)  # Adding exit confirmation
+app.protocol("WM_DELETE_WINDOW", on_close)
 app.mainloop()
