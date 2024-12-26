@@ -1,0 +1,5 @@
+customtkinter==5.1.1
+diec==3.2
+CTkMenuBar==1.0.0
+CTkMessagebox==1.0.0
+plyer==2.2.2
